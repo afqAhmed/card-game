@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities { 
+  .container { @apply mx-auto; }
+  .g-container { @apply container grid; }
+  .f-container { @apply container flex; }  
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 400ms;
+  transform: rotateY(0deg);
+}
+
+.flipped {
+  transform: rotateY(90deg);
+}
